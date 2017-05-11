@@ -1,0 +1,3 @@
+framework module First {
+    header "First-Swift.h"
+}

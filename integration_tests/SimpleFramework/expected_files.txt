@@ -1,0 +1,11 @@
+build/Debug-iphoneos
+build/Debug-iphoneos/SimpleFramework.framework
+build/Debug-iphoneos/SimpleFramework.framework/Headers
+build/Debug-iphoneos/SimpleFramework.framework/Headers/SimpleFramework-Swift.h
+build/Debug-iphoneos/SimpleFramework.framework/Info.plist
+build/Debug-iphoneos/SimpleFramework.framework/Modules
+build/Debug-iphoneos/SimpleFramework.framework/Modules/module.modulemap
+build/Debug-iphoneos/SimpleFramework.framework/Modules/SimpleFramework.swiftmodule
+build/Debug-iphoneos/SimpleFramework.framework/Modules/SimpleFramework.swiftmodule/arm.swiftdoc
+build/Debug-iphoneos/SimpleFramework.framework/Modules/SimpleFramework.swiftmodule/arm.swiftmodule
+build/Debug-iphoneos/SimpleFramework.framework/SimpleFramework

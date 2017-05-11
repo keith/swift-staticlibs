@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2301D281E5939170088FB74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2301D271E5939170088FB74 /* AppDelegate.swift */; };
+		C2301D2F1E5939170088FB74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2301D2E1E5939170088FB74 /* Assets.xcassets */; };
+		C2301D5E1E5939920088FB74 /* Second.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2301D5D1E5939920088FB74 /* Second.swift */; };
+		C2301D601E5939A80088FB74 /* First.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2301D5F1E5939A80088FB74 /* First.swift */; };
+		C2FCE4121EC3F546006E1DDD /* First.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2301D3E1E5939570088FB74 /* First.framework */; };
+		C2FCE4161EC3F549006E1DDD /* Second.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2301D501E59395E0088FB74 /* Second.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2301D431E5939570088FB74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2301D1C1E5939170088FB74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2301D3D1E5939570088FB74;
+			remoteInfo = First;
+		};
+		C2301D621E593A330088FB74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2301D1C1E5939170088FB74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2301D4F1E59395E0088FB74;
+			remoteInfo = Second;
+		};
+		C2FCE4181EC3F549006E1DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2301D1C1E5939170088FB74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2301D4F1E59395E0088FB74;
+			remoteInfo = Second;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2301D241E5939170088FB74 /* MultipleLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2301D271E5939170088FB74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2301D2E1E5939170088FB74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2301D331E5939170088FB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2301D3E1E5939570088FB74 /* First.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = First.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2301D411E5939570088FB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2301D501E59395E0088FB74 /* Second.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Second.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2301D531E59395E0088FB74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2301D5C1E5939690088FB74 /* settings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = settings.xcconfig; path = ../settings.xcconfig; sourceTree = "<group>"; };
+		C2301D5D1E5939920088FB74 /* Second.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second.swift; sourceTree = "<group>"; };
+		C2301D5F1E5939A80088FB74 /* First.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = First.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2FCE4141EC3F546006E1DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FCE4161EC3F549006E1DDD /* Second.framework in Frameworks */,
+				C2FCE4121EC3F546006E1DDD /* First.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2301D1B1E5939170088FB74 = {
+			isa = PBXGroup;
+			children = (
+				C2301D5C1E5939690088FB74 /* settings.xcconfig */,
+				C2301D261E5939170088FB74 /* MultipleLibs */,
+				C2301D3F1E5939570088FB74 /* First */,
+				C2301D511E59395E0088FB74 /* Second */,
+				C2301D251E5939170088FB74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2301D251E5939170088FB74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2301D241E5939170088FB74 /* MultipleLibs.app */,
+				C2301D3E1E5939570088FB74 /* First.framework */,
+				C2301D501E59395E0088FB74 /* Second.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2301D261E5939170088FB74 /* MultipleLibs */ = {
+			isa = PBXGroup;
+			children = (
+				C2301D271E5939170088FB74 /* AppDelegate.swift */,
+				C2301D2E1E5939170088FB74 /* Assets.xcassets */,
+				C2301D331E5939170088FB74 /* Info.plist */,
+			);
+			path = MultipleLibs;
+			sourceTree = "<group>";
+		};
+		C2301D3F1E5939570088FB74 /* First */ = {
+			isa = PBXGroup;
+			children = (
+				C2301D5F1E5939A80088FB74 /* First.swift */,
+				C2301D411E5939570088FB74 /* Info.plist */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		C2301D511E59395E0088FB74 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				C2301D531E59395E0088FB74 /* Info.plist */,
+				C2301D5D1E5939920088FB74 /* Second.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2301D231E5939170088FB74 /* MultipleLibs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2301D361E5939170088FB74 /* Build configuration list for PBXNativeTarget "MultipleLibs" */;
+			buildPhases = (
+				C2301D201E5939170088FB74 /* Sources */,
+				C2301D221E5939170088FB74 /* Resources */,
+				C2FCE4141EC3F546006E1DDD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2301D441E5939570088FB74 /* PBXTargetDependency */,
+				C2FCE4191EC3F549006E1DDD /* PBXTargetDependency */,
+			);
+			name = MultipleLibs;
+			productName = MultipleLibs;
+			productReference = C2301D241E5939170088FB74 /* MultipleLibs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2301D3D1E5939570088FB74 /* First */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2301D471E5939570088FB74 /* Build configuration list for PBXNativeTarget "First" */;
+			buildPhases = (
+				C2301D391E5939570088FB74 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2301D631E593A330088FB74 /* PBXTargetDependency */,
+			);
+			name = First;
+			productName = First;
+			productReference = C2301D3E1E5939570088FB74 /* First.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2301D4F1E59395E0088FB74 /* Second */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2301D591E59395E0088FB74 /* Build configuration list for PBXNativeTarget "Second" */;
+			buildPhases = (
+				C2301D4B1E59395E0088FB74 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Second;
+			productName = Second;
+			productReference = C2301D501E59395E0088FB74 /* Second.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2301D1C1E5939170088FB74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Keith Smiley";
+				TargetAttributes = {
+					C2301D231E5939170088FB74 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					C2301D3D1E5939570088FB74 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					C2301D4F1E59395E0088FB74 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C2301D1F1E5939170088FB74 /* Build configuration list for PBXProject "MultipleLibs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2301D1B1E5939170088FB74;
+			productRefGroup = C2301D251E5939170088FB74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2301D231E5939170088FB74 /* MultipleLibs */,
+				C2301D3D1E5939570088FB74 /* First */,
+				C2301D4F1E59395E0088FB74 /* Second */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2301D221E5939170088FB74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2301D2F1E5939170088FB74 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2301D201E5939170088FB74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2301D281E5939170088FB74 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2301D391E5939570088FB74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2301D601E5939A80088FB74 /* First.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2301D4B1E59395E0088FB74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2301D5E1E5939920088FB74 /* Second.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2301D441E5939570088FB74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2301D3D1E5939570088FB74 /* First */;
+			targetProxy = C2301D431E5939570088FB74 /* PBXContainerItemProxy */;
+		};
+		C2301D631E593A330088FB74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2301D4F1E59395E0088FB74 /* Second */;
+			targetProxy = C2301D621E593A330088FB74 /* PBXContainerItemProxy */;
+		};
+		C2FCE4191EC3F549006E1DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2301D4F1E59395E0088FB74 /* Second */;
+			targetProxy = C2FCE4181EC3F549006E1DDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C2301D341E5939170088FB74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C2301D371E5939170088FB74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MultipleLibs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smileykeith.MultipleLibs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C2301D481E5939570088FB74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2301D5C1E5939690088FB74 /* settings.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = First/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smileykeith.First;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C2301D5A1E59395E0088FB74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2301D5C1E5939690088FB74 /* settings.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = Second/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smileykeith.Second;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2301D1F1E5939170088FB74 /* Build configuration list for PBXProject "MultipleLibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2301D341E5939170088FB74 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2301D361E5939170088FB74 /* Build configuration list for PBXNativeTarget "MultipleLibs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2301D371E5939170088FB74 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2301D471E5939570088FB74 /* Build configuration list for PBXNativeTarget "First" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2301D481E5939570088FB74 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2301D591E59395E0088FB74 /* Build configuration list for PBXNativeTarget "Second" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2301D5A1E59395E0088FB74 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2301D1C1E5939170088FB74 /* Project object */;
+}
