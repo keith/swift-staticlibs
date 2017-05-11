@@ -1,4 +1,4 @@
-# swift-statclibs
+# swift-staticlibs
 
 This repo contains scripts for building iOS static frameworks that
 contain Swift sources from **within Xcode**
