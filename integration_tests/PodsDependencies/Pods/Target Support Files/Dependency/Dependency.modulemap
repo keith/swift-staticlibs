@@ -1,0 +1,6 @@
+framework module Dependency {
+  umbrella header "Dependency-umbrella.h"
+
+  export *
+  module * { export * }
+}
