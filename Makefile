@@ -7,7 +7,7 @@ test_integration:
 	$(MAKE) -C integration_tests/MultipleDependentLibs test
 	$(MAKE) -C integration_tests/MultipleArchitectures test
 	$(MAKE) -C integration_tests/ExtensionLibrary test
-	$(MAKE) -C integration_tests/PodsDependencies test
+	cd $(PWD)/integration_tests/PodsDependencies && $(MAKE) test
 
 test_unit:
 	python -m unittest discover -s tests
