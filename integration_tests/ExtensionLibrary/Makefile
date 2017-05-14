@@ -1,5 +1,6 @@
 test:
-	xcodebuild -sdk iphonesimulator SYMROOT=build clean build > /dev/null
+	xcodebuild -sdk iphonesimulator -arch i386 \
+		SYMROOT=build clean build > /dev/null
 	# Get all built files and validate them against expected files
 	find build/Debug-iphonesimulator > actual_files.txt
 	diff actual_files.txt expected_files.txt
