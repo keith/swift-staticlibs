@@ -1,29 +1,27 @@
 # swift-staticlibs
 
-This repo contains scripts for building iOS static frameworks that
-contain Swift sources from **within Xcode**
+This repo contains a replacement linker script for building iOS static
+frameworks that contain Swift sources from **within Xcode**
 
 ## Usage
 
 For each dynamic framework target in Xcode that you would like to be
 build statically:
 
-1. Set the undocumented `LD` and `LIPO` Xcode build settings to point to
-   these scripts
+1. Set the undocumented `LD` Xcode build setting to point to `ld.py`
 2. Add the target to your main target's `Link Binary With Libraries`
    build phase.
 
-You can set these settings through a user defined build setting in
-Xcode, or with a [`xcconfig`][xcconfigs] file like this:
+You can set this setting through a user defined build setting in Xcode,
+or with a [`xcconfig`][xcconfigs] file like this:
 
 ```
 LD = $(PROJECT_DIR)/path/to/ld.py
-LIPO = $(PROJECT_DIR)/path/to/lipo.py
 ```
 
 ## CocoaPods
 
-There are a few issues with using these scripts alongside CocoaPods:
+There are a few issues with using this script alongside CocoaPods:
 
 - With the below configuration, there is no differentiation between
   targets, if for some reason you didn't want to use these scripts for
@@ -52,7 +50,6 @@ post_install do |installer|
   installer.pods_project.targets.each do |target|
     target.build_configurations.each do |config|
       config.build_settings['LD'] = '$(PROJECT_DIR)/path/to/ld.py'
-      config.build_settings['LIPO'] = '$(PROJECT_DIR)/path/to/lipo.py'
     end
   end
 end
@@ -80,12 +77,12 @@ make decisions based on project configuration.
 
 ## How?
 
-By replacing the `libtool` and `lipo` invocations from Xcode, these
-scripts hijack the passed arguments, and transform them into the
-arguments necessary for building static _frameworks_, instead of dynamic
-frameworks. Then since the product ends up existing in the same place as
-the dynamic framework that would have otherwise been included, Xcode
-happily links the static framework instead.
+By replacing the `libtool` invocation from Xcode, this script hijacks
+the passed arguments, and transforms them into the arguments necessary
+for building static _frameworks_, instead of dynamic frameworks. Then
+since the product ends up existing in the same place as the dynamic
+framework that would have otherwise been included, Xcode happily links
+the static framework instead.
 
 Static _frameworks_ are very similar to dynamic frameworks, except the
 binary contained within the framework ends up being linked statically,
