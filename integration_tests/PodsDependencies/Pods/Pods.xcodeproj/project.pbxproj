@@ -287,6 +287,43 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1242EAB5395B9A2796EA4E3E410B9A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE5FDBA3803C75AC0686E07926CEFBE /* Pods-PodsDependencies.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PodsDependencies/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD = "$(PROJECT_DIR)/../../../ld.py";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PodsDependencies/Pods-PodsDependencies.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PodsDependencies;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -331,7 +368,7 @@
 			};
 			name = Debug;
 		};
-		7EFFBDD07994816C02C33C8082081A19 /* Release */ = {
+		5D47B81AEE4C146228813D73B93992F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8B89244974BAA2D5DA60A1EB25399B8 /* Dependency.xcconfig */;
 			buildSettings = {
@@ -353,7 +390,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD = "$(PROJECT_DIR)/../../../ld.py";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIPO = "$(PROJECT_DIR)/../../../lipo.py";
 				MODULEMAP_FILE = "Target Support Files/Dependency/Dependency.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = Dependency;
@@ -366,7 +402,7 @@
 			};
 			name = Release;
 		};
-		9A9F2536CB45436C826E599C908EA265 /* Debug */ = {
+		C73CB1E52E760D7C7539302149DB4517 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8B89244974BAA2D5DA60A1EB25399B8 /* Dependency.xcconfig */;
 			buildSettings = {
@@ -388,7 +424,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD = "$(PROJECT_DIR)/../../../ld.py";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIPO = "$(PROJECT_DIR)/../../../lipo.py";
 				MODULEMAP_FILE = "Target Support Files/Dependency/Dependency.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Dependency;
@@ -396,45 +431,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9F184FD27C1A17DAF012763C7B0BE0E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 264690018BB4D53819CF62D84AC1946B /* Pods-PodsDependencies.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGNING_ALLOWED = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PodsDependencies/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD = "$(PROJECT_DIR)/../../../ld.py";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIPO = "$(PROJECT_DIR)/../../../lipo.py";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PodsDependencies/Pods-PodsDependencies.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PodsDependencies;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -481,16 +477,16 @@
 			};
 			name = Release;
 		};
-		E89727A2470430AF906C496B1B916747 /* Release */ = {
+		F965DE64F6ACF3ECF10E51B668B3A484 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BE5FDBA3803C75AC0686E07926CEFBE /* Pods-PodsDependencies.release.xcconfig */;
+			baseConfigurationReference = 264690018BB4D53819CF62D84AC1946B /* Pods-PodsDependencies.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGNING_ALLOWED = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -502,10 +498,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD = "$(PROJECT_DIR)/../../../ld.py";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIPO = "$(PROJECT_DIR)/../../../lipo.py";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-PodsDependencies/Pods-PodsDependencies.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -513,11 +508,12 @@
 				PRODUCT_NAME = Pods_PodsDependencies;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -534,8 +530,8 @@
 		3B516746094169A0A1DFEAC247837568 /* Build configuration list for PBXNativeTarget "Pods-PodsDependencies" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F184FD27C1A17DAF012763C7B0BE0E0 /* Debug */,
-				E89727A2470430AF906C496B1B916747 /* Release */,
+				F965DE64F6ACF3ECF10E51B668B3A484 /* Debug */,
+				1242EAB5395B9A2796EA4E3E410B9A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -543,8 +539,8 @@
 		93039684B251078AF9F0B85B9D54A440 /* Build configuration list for PBXNativeTarget "Dependency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A9F2536CB45436C826E599C908EA265 /* Debug */,
-				7EFFBDD07994816C02C33C8082081A19 /* Release */,
+				C73CB1E52E760D7C7539302149DB4517 /* Debug */,
+				5D47B81AEE4C146228813D73B93992F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
