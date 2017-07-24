@@ -1,5 +1,9 @@
 # swift-staticlibs
 
+**NOTE**: As of Xcode 9 beta 4, Xcode natively supports static libraries
+with Swift sources, meaning this ~~hack~~ workaround is no longer
+needed!
+
 This repo contains a replacement linker script for building iOS static
 frameworks that contain Swift sources from **within Xcode**
 
